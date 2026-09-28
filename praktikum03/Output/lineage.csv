@@ -1,0 +1,11 @@
+sumber,asal,diambil_pada,jumlah_baris,keterangan
+trip,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-01.parquet,2026-09-27T18:12:16.082067+00:00,3066766,Parquet Bulanan TLC
+zona,https://d37ci6vzurychx.cloudfront.net/misc/taxi_zone_lookup.csv,2026-09-27T18:12:16.082424+00:00,265,tabel dimensi 265 zona
+cuaca,https://archive-api.open-meteo.com/v1/archive,2026-09-27T18:12:16.789021+00:00,744,Open-Meteo hourly archive
+tarif_referensi,/content/lapisan_mentah/operasional.db,2026-09-27T18:12:25.183305+00:00,6,tabel dimensi dari basis data operasional
+trip 2023-01,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-01.parquet,2026-09-27T18:15:48.943396+00:00,3066766,Parquet bulanan TLC
+cuaca 2023-01,https://archive-api.open-meteo.com/v1/archive,2026-09-27T18:15:48.943856+00:00,744,Open-Meteo hourly archive
+trip 2023-07,https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-07.parquet,2026-09-27T18:16:18.696018+00:00,2907108,Parquet bulanan TLC
+cuaca 2023-07,https://archive-api.open-meteo.com/v1/archive,2026-09-27T18:16:18.696240+00:00,744,Open-Meteo hourly archive
+udara 2023-01,https://air-quality-api.open-meteo.com/v1/air-quality,2026-09-27T18:17:21.526913+00:00,744,"Open-Meteo air quality, PM2.5 & US AQI per jam"
+udara 2023-07,https://air-quality-api.open-meteo.com/v1/air-quality,2026-09-27T18:17:29.703739+00:00,744,"Open-Meteo air quality, PM2.5 & US AQI per jam"
