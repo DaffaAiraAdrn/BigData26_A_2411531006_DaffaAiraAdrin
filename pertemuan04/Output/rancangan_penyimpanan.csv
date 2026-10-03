@@ -1,0 +1,6 @@
+fitur,penyimpanan,alasan,kelemahan
+1. Detail perjalanan per id,"Key-value, dengan tabel berindeks sebagai cadangan",200 pencarian key-value 0.0013 s berbanding 8.1600 s tanpa indeks,pertanyaan agregat menuntut seluruh nilai dibuka dengan json.loads()
+2. Dasbor pendapatan per wilayah per jam,"Per kolom, DuckDB langsung pada Parquet berpartisi","hitung per wilayah 0.0965 s berbanding 2.6813 s pada SQLite, tanpa tahap muat",pengambilan satu baris utuh tidak secepat key-value
+3. Rekomendasi zona dalam dua sampai tiga langkah,Graph berarah dengan bobot jumlah perjalanan,"dua langkah 0.0082 s, jumlah langkah cukup diganti pada argumen cutoff",merangkum data tabel besar lebih mahal daripada SQL
+4. Taksi dalam radius 500 meter,Indeks spasial STRtree di atas titik jemput,1000 kotak 0.2409 s berbanding 0.5619 s tanpa indeks,indeks harus dibangun ulang setiap titik berubah
+5. Audit dan pembatalan koreksi,Tabel Delta dengan time travel dan restore,"versi lama tetap terbaca melalui DeltaTable(path, version=n) dan koreksi tercatat sebagai versi baru pada _delta_log",file lama menumpuk sampai VACUUM dijalankan

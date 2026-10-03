@@ -1,0 +1,7 @@
+kebutuhan,cara_unggul,cara_lemah,angka
+Ambil satu data lewat id,Key-value; tabel dengan indeks,Tabel tanpa indeks,"6,277 kali"
+Menghitung atau merangkum banyak baris,Per kolom (DuckDB pada Parquet),Key-value (buka semua nilai),key-value 7.3 kali SQL; SQLite 27.8 kali DuckDB
+Data dengan field opsional atau berubah-ubah,Document,"Tabel (kolom NULL, migrasi)",kualitatif: field cuaca masuk tanpa ALTER TABLE
+Keterhubungan dengan jumlah langkah bebas,Graph,SQL (satu JOIN per langkah),1.1 kali pada dua langkah
+Mencari lokasi dalam wilayah,Spasial dengan indeks,Memeriksa semua titik,2.3 kali terhadap NumPy
+Perubahan yang harus aman dan bisa dibatalkan,Tabel Delta,Folder Parquet biasa,"kualitatif: time travel, penolakan skema, dan restore"
